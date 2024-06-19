@@ -15,7 +15,7 @@ app = application
 #def index():
 #    return render_template('index.html') # rendering the html template 
 
-@app.route('/predictdata', methods = ['GET', 'POSt']) # predict data route 
+@app.route('/', methods = ['GET', 'POSt']) # predict data route 
 def predict_datapoint():
     if request.method == 'GET': # if the request is GET then render the home page
         return render_template('home.html') # rendering the home page
