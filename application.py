@@ -11,9 +11,9 @@ app = application
 
 # Route for Home Page
 
-@app.route('/') # decorator used to tell the application which URL should call the associated function
-def index():
-    return render_template('index.html') # rendering the html template 
+#@app.route('/') # decorator used to tell the application which URL should call the associated function
+#def index():
+#    return render_template('index.html') # rendering the html template 
 
 @app.route('/predictdata', methods = ['GET', 'POSt']) # predict data route 
 def predict_datapoint():
