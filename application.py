@@ -9,12 +9,6 @@ application = Flask(__name__) # initializing a flask app
 
 app = application
 
-# Route for Home Page
-
-#@app.route('/') # decorator used to tell the application which URL should call the associated function
-#def index():
-#    return render_template('index.html') # rendering the html template 
-
 @app.route('/', methods = ['GET', 'POST']) # predict data route 
 def predict_datapoint():
     if request.method == 'GET': # if the request is GET then render the home page
